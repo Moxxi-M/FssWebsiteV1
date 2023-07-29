@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Shadows+Into+Light&display=swap");
+
 /* Light Mode Colors */
 :root {
   --bg-color: #fafafa; /* Background color */
@@ -16,30 +20,44 @@ body.dark-mode {
   --accent-color: #809ee5; /* Accent color in dark mode */
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
 /* Body styles */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-family: "Quicksand", sans-serif;
 }
 
 /* Header styles */
 header {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  padding: 10px;
+  width: 100%;
 }
 
 /* H1 styles */
-h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 100px;
+.title-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
   margin: 0;
+  padding: 20px 0;
 }
 
 /* Rounded horizontal rule styles */
-hr.rounded {
-  border: 5px solid var(--secondary-color);
+.rounded {
+  width: 100%;
+  height: 10px;
+  margin-top: 15px;
+  border-radius: 20px;
+  background: var(--primary-color);
 }
 
 /* Navbar styles */
@@ -48,8 +66,8 @@ hr.rounded {
   background-color: var(--secondary-color);
   color: var(--accent-color);
   align-items: center;
-  padding: 10px;
-  gap: 20px;
+  padding: 20px;
+  gap: 40px;
 }
 
 /* Navbar toggle button styles */
@@ -66,14 +84,7 @@ hr.rounded {
   display: flex;
   align-items: center;
   list-style: none;
-}
-
-/* Navbar list item styles */
-.nav-list li {
-  
-  margin-top: 20px;
-  display: inline;
-
+  gap: 20px;
 }
 
 /* Navbar link styles */
@@ -81,6 +92,12 @@ hr.rounded {
   vertical-align: middle;
   color: var(--text-color);
   text-decoration: none;
+}
+
+.nav-list li .navbar-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 
 /* Dark mode button styles */
@@ -214,17 +231,18 @@ hr.rounded {
 
 /* Main slider styles */
 .main-slider {
+  width: 100%;
   padding: 2rem;
 }
 
 /* Slider wrapper styles */
 .slider-wrapper {
   position: relative;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   aspect-ratio: 16/9;
-  max-height: 500px
+  max-height: 500px;
 }
 
 /* Slider styles */
@@ -236,7 +254,6 @@ hr.rounded {
   overflow-y: hidden;
   overflow-x: hidden;
   width: 100%;
- 
 }
 
 /* Slider image styles */
@@ -244,9 +261,8 @@ hr.rounded {
   flex: 0 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
+  width: 100%;
   max-height: 500px;
-
-  
 }
 
 /* Slider navigation styles */

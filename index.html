@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Custom CSS files -->
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Page title -->
-    <title>First Step Solutions</title>
-    <!-- Google Fonts -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Shadows+Into+Light&display=swap');
-    </style>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Custom CSS files -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Page title -->
+  <title>First Step Solutions</title>
 </head>
-<body> 
+
+<body>
   <!-- Header -->
-  <div class="header" >
-      <h1>First Step Solutions</h1>
+  <div class="header">
+    <h1 class="title-logo">First Step Solutions</h1>
   </div>
 
   <!-- Navigation bar -->
   <div class="navbar">
-    <!-- Toggle button for mobile navigation -->
+
     <button class="nav-toggle" onclick="toggleNav()">☰</button>
-    <!-- Navigation list -->
+
     <ul class="nav-list" id="navList">
       <li><a href="/recorces.html">Recorces!</a></li>
       <li><a href="#">About The staff!</a></li>
-      <li><a href="https://discord.gg/firststep" target="_blank"><img src="/Images/discord logo.png" style="width: 50px;"></a></li>
-      <li><a href="https://www.youtube.com/@firststepsolutions123" target="_blank"><img src="/Images/youtube logo.png" style="width: 50px;"></a></li>
+      <li><a href="https://discord.gg/firststep" target="_blank"><img class="navbar-icon"
+            src="/Images/discord_icon.png"></a></li>
+      <li><a href="https://www.youtube.com/@firststepsolutions123" target="_blank"><img src="/Images/youtube logo.png"
+            class="navbar-icon"></a></li>
     </ul>
-    <!-- Dark mode button -->
-    <button class="dark-mode-btn" onclick="toggleDarkMode()" id="darkModeBtn">Dark Mode</button>
+
+    <button class="dark-mode-btn" onclick="toggleDarkMode()" id="darkModeBtn"></button>
   </div>
   <!-- Horizontal rule with rounded styling -->
-  <hr class="rounded">
-
+  <div class="rounded"></div>
   <!-- Main slider section -->
   <section class="main-slider">
     <div class="slider-wrapper">
       <!-- Slider for images -->
       <div class="slider">
-        <img id="slide-1" src="/Images/download (3).jpeg" style="max-height: 500px;">
-        <img id="slide-2" src="/Images/download (4).jpeg" style="max-height: 500px;">
+        <img id="slide-1"
+          src="https://images.unsplash.com/photo-1636711224170-3f77e0ccd426?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+          style="max-height: 500px;">
+        <img id="slide-2"
+          src="https://images.unsplash.com/photo-1673272454443-9787c5f375b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+          style="max-height: 500px;">
         <img id="slide-3" src="/Images/download (5).jpeg" style="max-height: 500px;">
       </div>
       <!-- Slider navigation -->
@@ -60,4 +63,5 @@
   <!-- JavaScript file -->
   <script src="script.js"></script>
 </body>
+
 </html>
