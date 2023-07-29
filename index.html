@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS files -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Page title -->
+    <title>First Step Solutions</title>
+    <!-- Google Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Shadows+Into+Light&display=swap');
+    </style>
+</head>
+<body> 
+  <!-- Header -->
+  <div class="header" >
+      <h1>First Step Solutions</h1>
+  </div>
+
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <!-- Toggle button for mobile navigation -->
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+    <!-- Navigation list -->
+    <ul class="nav-list" id="navList">
+      <li><a href="/recorces.html">Recorces!</a></li>
+      <li><a href="#">About The staff!</a></li>
+      <li><a href="https://discord.gg/firststep" target="_blank"><img src="/Images/discord logo.png" style="width: 50px;"></a></li>
+      <li><a href="https://www.youtube.com/@firststepsolutions123" target="_blank"><img src="/Images/youtube logo.png" style="width: 50px;"></a></li>
+    </ul>
+    <!-- Dark mode button -->
+    <button class="dark-mode-btn" onclick="toggleDarkMode()" id="darkModeBtn">Dark Mode</button>
+  </div>
+  <!-- Horizontal rule with rounded styling -->
+  <hr class="rounded">
+
+  <!-- Main slider section -->
+  <section class="main-slider">
+    <div class="slider-wrapper">
+      <!-- Slider for images -->
+      <div class="slider">
+        <img id="slide-1" src="/Images/download (3).jpeg" style="max-height: 500px;">
+        <img id="slide-2" src="/Images/download (4).jpeg" style="max-height: 500px;">
+        <img id="slide-3" src="/Images/download (5).jpeg" style="max-height: 500px;">
+      </div>
+      <!-- Slider navigation -->
+      <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

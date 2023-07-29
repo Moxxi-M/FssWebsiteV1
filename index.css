@@ -1,0 +1,279 @@
+/* Light Mode Colors */
+:root {
+  --bg-color: #fafafa; /* Background color */
+  --text-color: #00091e; /* Text color */
+  --primary-color: #91abe8; /* Primary color */
+  --secondary-color: #ccdbff; /* Secondary color */
+  --accent-color: #2b5ed4; /* Accent color */
+}
+
+/* Dark Mode Colors */
+body.dark-mode {
+  --bg-color: #050505; /* Background color in dark mode */
+  --text-color: #fafafa; /* Text color in dark mode */
+  --primary-color: #91abe8; /* Primary color in dark mode */
+  --secondary-color: #191924; /* Secondary color in dark mode */
+  --accent-color: #809ee5; /* Accent color in dark mode */
+}
+
+/* Body styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Header styles */
+header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* H1 styles */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  margin: 0;
+}
+
+/* Rounded horizontal rule styles */
+hr.rounded {
+  border: 5px solid var(--secondary-color);
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+/* Navbar toggle button styles */
+.nav-toggle {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+}
+
+/* Navbar list styles */
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* Navbar list item styles */
+.nav-list li {
+  
+  margin-top: 20px;
+  display: inline;
+
+}
+
+/* Navbar link styles */
+.nav-list li a {
+  vertical-align: middle;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Dark mode button styles */
+.dark-mode-btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Dark mode icon styles */
+.dark-mode-icon {
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+/* Dark mode label styles */
+.dark-mode-label {
+  display: inline;
+}
+
+/* Dark mode button hover effect */
+.dark-mode-btn:hover {
+  opacity: 0.8;
+}
+
+/* Button styles */
+.btn {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+/* Active button styles */
+.btn.active {
+  background: #333;
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+}
+
+/* Chat button styles */
+.chat-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Chat bubble styles */
+.chat-bubble {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: chatAnimation 0.8s ease-out;
+}
+
+/* Chat animation keyframes */
+@keyframes chatAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  75% {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* Card grid styles */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+/* Card styles */
+.card {
+  position: relative; /* Add this to position pseudo-elements */
+  width: calc(100% - 20px);
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  overflow: hidden; /* Hide any content that exceeds the fixed aspect ratio */
+}
+
+/* Pseudo-element for card aspect ratio */
+.card:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* Set the aspect ratio (square) - 1:1 */
+}
+
+/* Card content styles */
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px; /* Smaller padding */
+}
+
+/* Main slider styles */
+.main-slider {
+  padding: 2rem;
+}
+
+/* Slider wrapper styles */
+.slider-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  max-height: 500px
+}
+
+/* Slider styles */
+.slider {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+ 
+}
+
+/* Slider image styles */
+.slider img {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  max-height: 500px;
+
+  
+}
+
+/* Slider navigation styles */
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  /* Adjust the position based on the height of the slider */
+  top: calc(100% - 500px + 1.25rem);
+}
+
+/* Slider navigation button styles */
+.slider-nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  margin-top: 450px;
+}
+
+/* Slider navigation button hover effect */
+.slider-nav a:hover {
+  opacity: 1;
+}

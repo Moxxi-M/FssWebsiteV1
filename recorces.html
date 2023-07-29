@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS files -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Page title -->
+    <title>First Step Solutions</title>
+    <!-- Google Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Shadows+Into+Light&display=swap');
+    </style>
+</head>
+<body> 
+    <!-- Header -->
+    <h1 style="padding-bottom: 3px;"> Recorces: </h1>
+    <!-- Information about the channel -->
+    <h4 style="font-weight: lighter;padding: 0%;margin: 0%;">Please note that this channel is for educational purposes only and does not provide medical advice nor does it claim to.</h4>
+    <h4 style="font-weight: lighter;padding: 0%;margin-top: 0px;">We ask you not to self-diagnose yourself based on the information here, as it can be dangerous and misleading. The best way to get a proper diagnosis is to see a qualified medical professional.</h4>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <!-- Toggle button for mobile navigation -->
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      <!-- Navigation list -->
+      <ul class="nav-list" id="navList">
+       
+        <li><a href="/index.html">Home!</a></li>
+        <li><a href="#">About The staff!</a></li>
+        <li><a href="https://discord.gg/firststep" target="_blank"><img src="/Images/discord logo.png" style="width: 50px;"></a></li>
+        <li><a href="https://www.youtube.com/@firststepsolutions123" target="_blank"><img src="/Images/youtube logo.png" style="width: 50px;"></a></li>
+        
+        <!-- Add more pages here as needed -->
+      </ul>
+      <!-- Dark mode button -->
+      <button class="dark-mode-btn" onclick="toggleDarkMode()" id="darkModeBtn">Dark Mode</button>
+    </div>
+
+    <!-- Horizontal rule with rounded styling -->
+    <hr class="rounded" style="margin-bottom: 10px;">
+
+    <!-- Card grid section -->
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card" onclick="openLink('https://cdn.discordapp.com/attachments/1088856815162372189/1122164497688297502/First_Step_Solutions_-_Maladaptive_Daydreaming.pdf')">
+        <h3>Maladaptive Daydreaming</h3>
+        <p>Click to learn more! </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="card" onclick="openLink('https://www.example.com/page2')">
+        <h3>Card 2</h3>
+        <p>Click to go to Page 2</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card" onclick="openLink('https://www.example.com/page3')">
+        <h3>Card 3</h3>
+        <p>Click to go to Page 3</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="card" onclick="openLink('https://www.example.com/page4')">
+        <h3>Card 4</h3>
+        <p>Click to go to Page 4</p>
+      </div>
+   
+    </div>
+
+    <!-- JavaScript function to open links -->
+    <script>
+      function openLink(url) {
+        window.location.href = url;
+      }
+    </script>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
