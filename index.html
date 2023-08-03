@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Custom CSS files -->
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Page title -->
-    <title>First Step Solutions</title>
-    <!-- Google Fonts -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Shadows+Into+Light&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>First Step Solutions</title>
 </head>
-<body> 
+
+<body>
   <!-- Header -->
-  <div class="header" >
-      <h1>First Step Solutions</h1>
+  <div class="header">
+    <h1 class="title-logo">First Step Solutions</h1>
   </div>
 
   <!-- Navigation bar -->
   <div class="navbar">
-    <!-- Toggle button for mobile navigation -->
+
     <button class="nav-toggle" onclick="toggleNav()">☰</button>
-    <!-- Navigation list -->
+
     <ul class="nav-list" id="navList">
-      <li><a href="/recorces.html">Recorces!</a></li>
-      <li><a href="#">About The staff!</a></li>
-      <li><a href="https://discord.gg/firststep" target="_blank"><img src="/Images/discord logo.png" style="width: 50px;"></a></li>
-      <li><a href="https://www.youtube.com/@firststepsolutions123" target="_blank"><img src="/Images/youtube logo.png" style="width: 50px;"></a></li>
+      <li><a href="/recorces.html">Resources!</a></li>
+      <li><a href="/thestaff.html"> The staff!</a></li>
+      <li><a href="https://discord.gg/firststep" target="_blank"><img class="navbar-icon" src="/Images/discord_icon.png"></a></li>
+      <li><a href="https://www.youtube.com/@firststepsolutions123" target="_blank"><img src="/Images/YT logo.png" class="navbar-icon" style="width: 55px;"></a></li>
+      <li><a href="https://www.instagram.com/_.first.step.solutions._/" target="_blank"><img src="/Images/Insta Logo.png"class="navbar-icon" style="width: 55px;"></a></li>
+      <li><a href="https://www.reddit.com/r/mentalsociety/" target="_blank"><img src="/Images/Reddit Logo.png"class="navbar-icon" style="width: 55px;"></a></li>
     </ul>
-    <!-- Dark mode button -->
-    <button class="dark-mode-btn" onclick="toggleDarkMode()" id="darkModeBtn">Dark Mode</button>
+
+    <button class="dark-mode-btn" onclick="toggleDarkMode()" id="darkModeBtn">DarkMode</button>
   </div>
   <!-- Horizontal rule with rounded styling -->
-  <hr class="rounded">
-
+  <div class="rounded"></div>
   <!-- Main slider section -->
   <section class="main-slider">
     <div class="slider-wrapper">
-      <!-- Slider for images -->
-      <div class="slider">
-        <img id="slide-1" src="/Images/download (3).jpeg" style="max-height: 500px;">
-        <img id="slide-2" src="/Images/download (4).jpeg" style="max-height: 500px;">
-        <img id="slide-3" src="/Images/download (5).jpeg" style="max-height: 500px;">
-      </div>
-      <!-- Slider navigation -->
+      <div class="slider"></div>
       <div class="slider-nav">
-        <a href="#slide-1"></a>
-        <a href="#slide-2"></a>
-        <a href="#slide-3"></a>
+        <button class="button" onclick="prevSlide()">&lt;</button>
+        <button class="button" onclick="nextSlide()">&gt;</button>
       </div>
     </div>
   </section>
 
-  <!-- JavaScript file -->
+  <div class="rounded"></div>
+
+  <div class="block">
+      <div class="thanks"><h2>Thank You To Our Supporters!</h2></div>
+        <div class="boxes">
+          <div class="firstbox">
+             <ul class="Supporters">
+              <li> Ali Al-Abboud - $50 </li>
+              <li> Moltensiren95 - server sub </li>
+              <li> max21214 - booster + server sub </li>
+              <li> GenderGremlin - booster </li>
+              <li> Artemis - booster </li>
+              <li> denny - booster </li>
+              <li> StitchRCRP - booster </li>
+              
+             </ul>
+            </div>
+            <div class="secondbox">
+              <ul class="Supporters">
+                <li> Ozi! - booster </li>
+                <li> Fred - booster </li>
+                <li> ISRAEL - booster </li>
+                <li> Musa_K - booster </li>
+                <li> Hermes - booster </li>
+                <li> Rynn - booster </li>
+              </ul>
+            </div>
+          </div>
+     </div>
+
+
+  <div class="bottom"></div>
+
+  </div>
+
   <script src="script.js"></script>
+  <script src="slider.js"></script>
+ 
 </body>
+
 </html>
