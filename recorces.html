@@ -6,74 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Custom CSS files -->
     <link rel="stylesheet" href="index.css">
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Page title -->
     <title>First Step Solutions</title>
-    <!-- Google Fonts -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Shadows+Into+Light&display=swap');
     </style>
 </head>
 <body> 
     <!-- Header -->
-    <h1 style="padding-bottom: 3px;"> Recorces: </h1>
+    <div class="header">
+      <h1 class="title-logo">First Step Solutions</h1>
+    </div>
     <!-- Information about the channel -->
-    <h4 style="font-weight: lighter;padding: 0%;margin: 0%;">Please note that this channel is for educational purposes only and does not provide medical advice nor does it claim to.</h4>
-    <h4 style="font-weight: lighter;padding: 0%;margin-top: 0px;">We ask you not to self-diagnose yourself based on the information here, as it can be dangerous and misleading. The best way to get a proper diagnosis is to see a qualified medical professional.</h4>
-
+     <div class="disclaimer-text">
+      <p style="padding-bottom: 10px;margin-bottom: 10px;">Please note that this channel is for educational purposes only and does not provide medical advice nor does it claim to.</p>
+      <p style="padding-top: 10px;margin-bottom: 10px;padding-bottom: 10px;">We ask you not to self-diagnose yourself based on the information here, as it can be dangerous and misleading. The best way to get a proper diagnosis is to see a qualified medical professional.</param>
+      </div>
     <!-- Navigation bar -->
     <div class="navbar">
-      <!-- Toggle button for mobile navigation -->
+
       <button class="nav-toggle" onclick="toggleNav()">☰</button>
-      <!-- Navigation list -->
+  
       <ul class="nav-list" id="navList">
-       
         <li><a href="/index.html">Home!</a></li>
-        <li><a href="#">About The staff!</a></li>
-        <li><a href="https://discord.gg/firststep" target="_blank"><img src="/Images/discord logo.png" style="width: 50px;"></a></li>
-        <li><a href="https://www.youtube.com/@firststepsolutions123" target="_blank"><img src="/Images/youtube logo.png" style="width: 50px;"></a></li>
-        
-        <!-- Add more pages here as needed -->
+        <li><a href="/thestaff.html"> The staff!</a></li>
+        <li><a href="https://discord.gg/firststep" target="_blank"><img class="navbar-icon" src="/Images/discord_icon.png"></a></li>
+        <li><a href="https://www.youtube.com/@firststepsolutions123" target="_blank"><img src="/Images/YT logo.png" class="navbar-icon" style="width: 55px;"></a></li>
+        <li><a href="https://www.instagram.com/_.first.step.solutions._/" target="_blank"><img src="/Images/Insta Logo.png"class="navbar-icon" style="width: 55px;"></a></li>
+        <li><a href="https://www.reddit.com/r/mentalsociety/" target="_blank"><img src="/Images/Reddit Logo.png"class="navbar-icon" style="width: 55px;"></a></li>
       </ul>
-      <!-- Dark mode button -->
-      <button class="dark-mode-btn" onclick="toggleDarkMode()" id="darkModeBtn">Dark Mode</button>
+  
+      <button class="dark-mode-btn" onclick="toggleDarkMode()" id="darkModeBtn">DarkMode</button>
     </div>
-
     <!-- Horizontal rule with rounded styling -->
-    <hr class="rounded" style="margin-bottom: 10px;">
+    <div class="rounded"></div>
 
-    <!-- Card grid section -->
-    <div class="card-grid">
-      <!-- Card 1 -->
-      <div class="card" onclick="openLink('https://cdn.discordapp.com/attachments/1088856815162372189/1122164497688297502/First_Step_Solutions_-_Maladaptive_Daydreaming.pdf')">
-        <h3>Maladaptive Daydreaming</h3>
-        <p>Click to learn more! </p>
+    <div class="row">
+      <!-- 1st row  -->
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1088856815162372189/1122164497688297502/First_Step_Solutions_-_Maladaptive_Daydreaming.pdf"><img src="/Images/maladaptive daydreaming.png" alt="a guy daydreaming." draggable="false"></a>
+        <h2>Maladaptive Daydreaming </h2>
+        <p>Click the image to learn more!</p>
       </div>
-      <!-- Card 2 -->
-      <div class="card" onclick="openLink('https://www.example.com/page2')">
-        <h3>Card 2</h3>
-        <p>Click to go to Page 2</p>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1088856815162372189/1122574946640597002/FSS_Delusional_Disorder.pdf"><img src="/Images/Delusional Disorder (2).png"" alt="a guy looking scared as hes noting down serious things in his notenbook." draggable="false"></a>
+        <h2>Delusional Disorder</h2>
+        <p>Click the image to learn more!</p>
       </div>
-      <!-- Card 3 -->
-      <div class="card" onclick="openLink('https://www.example.com/page3')">
-        <h3>Card 3</h3>
-        <p>Click to go to Page 3</p>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1128955244756353104/Separation_anxiety_disorder_.pdf"><img src="/Images/SeperationAnxietyDisorder.png" alt="a girl sitting on the edge of her bed with her brother walking away." draggable="false"></a>
+        <h2>Separation Anxiety Disorder</h2>
+        <p>Click the image to learn more!</p>
       </div>
-      <!-- Card 4 -->
-      <div class="card" onclick="openLink('https://www.example.com/page4')">
-        <h3>Card 4</h3>
-        <p>Click to go to Page 4</p>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1128683199527129088/FSS_-_Obsessive-Compulsive_Disorder_OCD.pdf"><img src="/Images/OCD.png" alt="an image with a guy holding his hands up to his face filled with soap." draggable="false"></a>
+        <h2>Obsessive-Compulsive Disorder (OCD) </h2>
+        <p>Click the image to learn more!</p>
       </div>
-   
+      
+
+      <!-- 2nd row -->
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1125097862842290286/FSS_Insomnia_Disorder.pdf"><img src="Images/InsomniaDisorder.png" alt="a guy laying in bed who cant sleep and looks deprived of alot of sleep." draggable="false"></a>
+        <h2>Insomnia Disorder</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1133220488110420058/1133611942968311859/FSS_Brief_Psychotic_Disorder-1.pdf"><img src="/Images/BreifPsycoticDisorderf.png" alt="a girl in the middle of a room seeing things that arnet there and is hallucinating." draggable="false"></a>
+        <h2>Brief Psychotic Disorder</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1128977077618618439/FSS_Attention-Deficit_Hyperactivity_Disorder_ADHD.pdf"><img src="/Images/ADHD.png" alt="a guy sitting in a room surrounded by stimuli and cant focus." draggable="false"></a>
+        <h2>Attention-Deficit/Hyperactivity Disorder</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1130125194950869103/FSS_-_Autism_Spectrum_Disorder.pdf"><img src="/Images/ASD.png" alt="a boy in the middle of a room super focused on his train set." draggable="false"></a>
+        <h2>Autism Spectrum Disorder</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+       <!-- third row -->
+
+       <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1130725423307821106/FSS_-_Anti-social_Personality_Disorder..pdf"><img src="/Images/APD.png" alt="a guy in a club surrounded by people but seems to be completely alone. " draggable="false"></a>
+        <h2>Antisocial Personality Disorder</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1131493726666100816/FSS_-_Social_Anxiety_Disorder.pdf"><img src="/Images/SAD.png" alt="a girl surrounded by people and is uncomfortable and nervous." draggable="false"></a>
+        <h2>Social Anxiety Disorder</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1131580962455703692/FSS_-_Dependent_personality_disorder.pdf"><img src="/Images/DPD.png" alt="a girl who is completely dependent on their partener / friends." draggable="false"></a>
+        <h2>Dependent personality Disorder</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1132199586233065492/FSS_-_Post_traumatic_stress_disorder_PTSD.pdf"><img src="/Images/PTSD.png" alt="an image with a guy surrounded by traumatic events." draggable="false"></a>
+        <h2>Post-traumatic stress Disorder (PTSD) </h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+
+      <!-- fourth row  -->
+
+
+       <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1132591198146662440/FSS_-_Cannabis_Use_Disorder_.pdf"><img src="/Images/CUD.png" alt="a guy in a chair with a cigarette in their hand. " draggable="false"></a>
+        <h2>Cannabis Use Disorder</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1094004935105986581/1133041064647860286/FSS_Delirium.pdf"><img src="/Images/DD.png" alt="a girl in a hospital room who is confused and dosnt know where she is." draggable="false"></a>
+        <h2>Delirium Disorder</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1133220488110420058/1133767212952453221/FSS_-_Anger_Management_.pdf"><img src="/Images/anger managment.png" alt="a guy releasing firey rage." draggable="false"></a>
+        <h2>Anger Management </h2>
+        <p>Click the image to learn more!</p>
+      </div>
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1133220488110420058/1134388002169294998/FSS_-_Gender_Dysphoria_1.pdf"><img src="/Images/Gender Dysmorphia.png" alt="an image with a guy surrounded by traumatic events." draggable="false"></a>
+        <h2>Gender Dysphoria</h2>
+        <p>Click the image to learn more!</p>
+      </div>
+      <!-- 5th row  -->
+
+      <div class="card">
+        <a href="https://cdn.discordapp.com/attachments/1133220488110420058/1135120073078607882/FSS_-_Generalized_Anxiety_Disorder.pdf"><img src="/Images/GAD.png" alt="a guy whos worried. " draggable="false"></a>
+        <h2>Generalized Anxiety Disorder </h2>
+        <p>Click the image to learn more!</p>
+      </div>
     </div>
 
-    <!-- JavaScript function to open links -->
-    <script>
-      function openLink(url) {
-        window.location.href = url;
-      }
-    </script>
 
     <!-- JavaScript file -->
     <script src="script.js"></script>
